@@ -693,7 +693,7 @@ margin-bottom: 16px;
 }
 
 .modern-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-label {
@@ -721,6 +721,7 @@ margin-bottom: 16px;
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-input:focus {
 /* border-color: #4d5ae5; */
     border: 1px solid #4d5ae5;
@@ -813,10 +814,6 @@ fill: transparent;
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
-    /* border-radius: 2px;
-    border-color: transparent;
-    /* fill: #404bbf; */
-    border: 1px solid #404bbf; */
 }
 
 .privacy-link {
@@ -840,7 +837,7 @@ height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background-color: #4d5ae5;
 font-size: 16px;
-font-weight: 500
+font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
