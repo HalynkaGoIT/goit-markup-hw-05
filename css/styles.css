@@ -542,7 +542,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
-padding-bottom: 16px;
+margin-bottom: 16px;
 }
 
 .footer-form-email {
@@ -589,7 +589,7 @@ gap: 16px;
 
 border-radius: 4px;
 padding: 8px 24px;
-width: 165px;
+min-width: 165px;
 height: 40px;
 background: #4d5ae5;
 
@@ -600,12 +600,15 @@ letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
 
+border: none;
+
 transition: background-color var(--animation),
 border var(--animation);
 }
 
 .subscribe {
 fill: #f4f4fd;
+margin-left: 16px;
 }
 
 .backdrop {
@@ -641,8 +644,14 @@ pointer-events: auto;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 72px 24px 24px 24px; 
+
+    transition: transform var(--animation);
 }
 .modal-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     position: absolute;
     top: 24px;
     right: 24px;
@@ -653,17 +662,22 @@ pointer-events: auto;
     height: 24px;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: background-color var(--animation),
+    
+    border var(--animation);
 }
 
 .close-icon {
 stroke: #2e2f42;
-transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* border-radius: 100%; */
     
 }
 
-.modal-close-btn:hover .close-icon {
- stroke: #fff;   
+.modal-close-btn:hover .close-icon,
+.modal-close-btn:focus .close-icon {
+ fill: #fff;   
 }
 
 .modal-close-btn:hover,
@@ -690,13 +704,15 @@ margin-bottom: 16px;
     display: block;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-bottom: 4px;
 }
 
 .modal-field {
     position: relative;
+    margin-bottom: 16px;
 }
 
 .modal-input {
@@ -718,6 +734,7 @@ margin-bottom: 16px;
 
 .modal-icon {
     fill: #2e2f42;
+    /* margin-left: 16px; */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
